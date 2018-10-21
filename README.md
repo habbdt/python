@@ -1,3 +1,2 @@
-# python
+# python github README repository. 
 
- #Python script repository
