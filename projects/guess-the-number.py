@@ -25,16 +25,19 @@ def high_low(user_input_val, rand_number):
 
 while True:
     try:
-        user_input = int(input("Guess the number? "))
+        user_input = input("Guess the number? ")
         rand_number = random.randint(LOWER_THRESHOLD, UPPER_THRESHOLD)
-        if (user_input <= 0):
+        if (int(user_input) <= 0):
             raise ValueError ("Please enter a number greater than zero")
+        elif int(user_input) > 10:
+            raise ValueError ("Please enter a number between 1 to 10")
     except ValueError as err:
         print ("ERROR!!!! {}".format(err))
     else:
-        if user_input == rand_number:
+        user_input_main = int(user_input)
+        if user_input_main == rand_number:
             print("You guessed right number\n")
             print("Exiting!!!")
             sys.exit()
         else:
-            high_low(user_input, rand_number)
+            high_low(user_input_main, rand_number)
