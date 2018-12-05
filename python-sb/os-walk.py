@@ -20,4 +20,4 @@ def os_walk(root_of_fs):
         print ("bytes in", file_count, "non-directory files")
     print (root_of_fs, "contains", total_files, "files with a combined size of", total_size, "bytes")
 
-os_walk("/Users/hbustam/code/python/python-sb")
+os_walk("/Users3/hbustam/code/python/python-sb")
