@@ -2,7 +2,7 @@
 
 import subprocess
 import ipaddress
-import sys
+import pip
 from subprocess import Popen, PIPE
 
 cidr_scan = ipaddress.ip_network(sys.argv[1])
