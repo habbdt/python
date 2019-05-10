@@ -5,8 +5,8 @@ import ipaddress
 import sys
 from subprocess import Popen, PIPE
 
-cids_scan = ipaddress.ip_network(sys1.argv[1])
-free_ip_avaialble = []
+cidr_scan = ipaddress.ip_network(sys.argv[1])
+free_ip = []
 
 for i in network_scan.hosts():
     i = str(i)
